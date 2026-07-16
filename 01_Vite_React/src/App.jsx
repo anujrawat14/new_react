@@ -1,10 +1,12 @@
-
-
+import Chai from "./chai"
 function App() {
-  
 
   return (
-    <h1> chai aur code vite </h1>
+    <>
+      <Chai />
+      <h1> hello </h1>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, atque.</p>
+    </>
   )
 }
 
