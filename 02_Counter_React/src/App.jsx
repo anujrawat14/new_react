@@ -9,9 +9,19 @@ function App() {
   let [counter, setCounter] = useState(5)//default value is 5 it has name counter ,and function setCounter
   // let counter = 5
 
+  // const addValue = () => {
+  //   // counter = counter + 1;
+  //   setCounter( counter + 1);
+  //   setCounter( counter + 1);
+  //   setCounter( counter + 1);
+  //   setCounter( counter + 1);
+  // }
   const addValue = () => {
-    counter = counter + 1;
-    setCounter(counter);
+    // counter = counter + 1;
+    setCounter(prevcounter => prevcounter + 1);
+    setCounter(prevcounter => prevcounter + 1);
+    setCounter(prevcounter => prevcounter + 1);
+    setCounter(prevcounter => prevcounter + 1);
   }
 
   const removeValue = () => {
@@ -19,7 +29,7 @@ function App() {
     setCounter(counter);
   }
 
-  
+
   return (
     <>
       <h1> project of counter To learn hook use case</h1>
